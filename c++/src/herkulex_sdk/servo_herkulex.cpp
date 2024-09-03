@@ -276,7 +276,7 @@ bool ServoHerkulex::moveAngle0201 (int goal, int tID, int tLED,
   uint8_t pt = 0x00;
   pt = (uint8_t)(playtime/11.2f);
 
-  uint16_t p = (uint16_t)(3.07*goal) + 512;
+  uint16_t p = (3.07*goal) + 512;
 
   std::vector<uint8_t> buf = std::vector<uint8_t> (8);
   buf  = {0x0C,0x00,HX_SJOG,0x00,0x00,0x00,0x00,0x00};
